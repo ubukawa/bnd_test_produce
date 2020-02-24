@@ -1,0 +1,30 @@
+{
+  "name": "autonomy",
+  "version": "1.0.0",
+  "description": "IT dashboard の行政界データをベクトルタイルにしたもの",
+  "main": "index.js",
+  "scripts": {
+    "produce": "rake"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfu/autonomy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/hfu/autonomy/issues"
+  },
+  "homepage": "https://github.com/hfu/autonomy#readme",
+  "dependencies": {
+    "config": "^3.1.0",
+    "hjson": "^3.1.2",
+    "json-text-sequence": "^0.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babelify": "^10.0.0"
+  }
+}

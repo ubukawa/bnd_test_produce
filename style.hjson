@@ -1,0 +1,90 @@
+{
+  version: 8
+  center: [
+    139.754
+    35.746
+  ]
+  zoom: 8.22
+  sources: {
+    v: {
+      type: vector
+      tiles: [
+        https://hfu.github.io/autonomy/zxy/{z}/{x}/{y}.pbf
+      ]
+      attribution: IT Dashboard (source)
+      minzoom: 2
+      maxzoom: 10
+    }
+  }
+  sprite: https://hfu.github.io/unite-sprite/sprite
+  glyphs: https://vectortiles.xyz/fonts/{fontstack}/{range}.pbf
+  layers: [
+    {
+      id: background
+      type: background
+      paint: {
+        background-color: [
+          rgb
+          187
+          222
+          251
+        ]
+      }
+    }
+    {
+      id: prefecture
+      type: fill
+      source: v
+      source-layer: prefecture
+      paint: {
+        fill-color: [
+          rgb
+          245
+          245
+          245
+        ]
+        fill-outline-color: [
+          rgb
+          92
+          99
+          102
+        ]
+      }
+    }
+    {
+      id: municipality
+      type: fill
+      source: v
+      source-layer: municipality
+      paint: {
+        fill-color: [
+          rgb
+          245
+          245
+          245
+        ]
+        fill-outline-color: [
+          rgb
+          92
+          99
+          102
+        ]
+      }
+    }
+    {
+      id: munilabel
+      type: symbol
+      source: v
+      source-layer: munilabel
+      layout: {
+        text-field: [
+          get
+          code
+        ]
+        text-font: [
+          sans
+        ]
+      }
+    }
+  ]
+}

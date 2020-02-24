@@ -1,0 +1,28 @@
+{
+  minzoom: 2
+  maxzoom: 10
+  srcs: [
+    {
+      url: /data/bndaryall.rfc8142
+      layer: prefecture
+      minzoom: 2 
+      maxzoom: 7
+    }
+    {
+      url: https://www.itdashboard.go.jp/js/data/municipality.geojson
+      layer: municipality
+      minzoom: 8
+      maxzoom: 10
+    }
+    {
+      url: https://www.itdashboard.go.jp/js/data/municipality_name.geojson
+      layer: munilabel
+      minzoom: 10
+      maxzoom: 10
+    }
+  ]
+  ogr2ogrPath: ogr2ogr
+  tippecanoePath: tippecanoe
+  dstDir: /data/zxy
+}
+

@@ -1,2 +1,24 @@
 # bnd_test_produce
-test place for boundary data
+test place for boundary data.  
+Originally from hfu/autonomy
+
+
+# ??
+## ?????????
+- GDAL 2.4.0 ???ogr2ogr ??????
+- Tippecanoe
+- Node.js
+- Ruby?rake ??????
+- hjson
+- gl-style-validate
+
+## ??????
+```console
+git clone git@github.com:ubukawa/bnd_test_produce
+cd bnd_test_produce
+rake
+```
+
+
+# ??
+TODO
